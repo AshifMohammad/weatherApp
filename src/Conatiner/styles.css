@@ -1,0 +1,133 @@
+@import "/node_modules/@mdi/font/css/materialdesignicons.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;600&display=swap');
+
+html,
+body {
+    align-items: center;
+    background-color: rgb(238 248 250 / 82%);;
+    color: #333;
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3em;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.App {
+    height: 100vh;
+    transition: all .3s ease-in-out;
+    width: 100vw;
+}
+
+.weather-container {
+    margin-top: 5%;
+    height: 21rem;
+    width: 30rem;
+    box-sizing: border-box;
+    border: 5px solid white;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
+
+
+.widget {
+    border-radius: .5rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16), 0 3px 5px rgba(0, 0, 0, 0.23);
+}
+
+.inline-input {
+    align-items: flex-start;
+    border-bottom: 1px dotted #fff;
+    display: flex;
+    margin: .5rem 0 1.5rem 0;
+}
+
+.inline-input:focus-within {
+    border-bottom: 1px dotted #333;
+    transition: all .3s ease-in-out;
+}
+
+.inline-input .mdi {
+    color: #fff;
+    padding: 0.2rem 0.5rem 0 0;
+}
+
+.location-input {
+    display: flex;
+    align-items: flex-start;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    max-width: 16rem;
+    outline: none;
+    padding-bottom: .3rem;
+}
+
+.main-display {
+    border-bottom: solid 5px white;
+}
+
+.main-info {
+    display: flex;
+    justify-content: center;
+}
+
+.temp-measurement {
+    color: #333;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: .85;
+    padding: 1rem 0 0 10px;
+}
+
+.temp-unit {
+    vertical-align: top;
+}
+
+.selection-row {
+    display: flex;
+    width: 100%;
+    height: 10rem;
+}
+
+.selection-days {
+    color: #333;
+    font-size: 1.5rem;
+    width: 25%;
+    border-right: solid 5px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.selection-days:last-child {
+    border-right: none;
+}
+
+.day-icon {
+    font-size: 3rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.cities {
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.city{
+    text-transform: uppercase;
+}
+.active-city{
+    color: #55bcd8;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.selection-weather {
+    color: #333;
+    font-size: .7rem;
+    width: 3.5rem;
+}
